@@ -3,7 +3,7 @@
 # Description
 
 This script is aimed at tagging text in a utf-8 encoded .txt file with pos_ner_deprel_head notation. I.e., each token of the text 
-gets assigned underscored tags in the following order: <TOKEN>_<PART OF SPEECH>_<NER>_<TYPE OF SYNTACTIC DEPENDENCY>_<TREEBANK_TAG>_<DEPENDENCY_HEAD>
+gets assigned underscored tags in the following order: <TOKEN> <PART OF SPEECH> <NER> <TYPE OF SYNTACTIC DEPENDENCY> <TREEBANK_TAG> <DEPENDENCY_HEAD>
 The tags are assigned as per [stanza](https://stanfordnlp.github.io/stanza/performance.html) library.
 
 #Tagsets
