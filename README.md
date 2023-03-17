@@ -2,8 +2,8 @@
 
 # Description
 
-This script is aimed at tagging text in a utf-8 encoded .txt file with pos_ner_deprel_head notation. I.e., each token of the text 
-gets assigned underscored tags in the following order: token, pos, ner, xpos (treebank), dependency, head
+This script is aimed at tagging text in a utf-8 encoded .txt file with pos_ner_xpos_deprel_head notation. I.e., each token of the text 
+gets assigned underscored tags in the following order: token, pos, ner, xpos (treebank), dependency, head.
 The tags are assigned as per [stanza](https://stanfordnlp.github.io/stanza/performance.html) library.
 
 #Tagsets

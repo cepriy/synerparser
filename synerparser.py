@@ -10,7 +10,17 @@ def text_to_pos_ner(file_path, language_code):
     print(doc)
     for sentence in doc.to_dict():
         for word in sentence:
-            resulting_text += word["text"] + "_" + word["upos"] + "_" + word["ner"] + "_" + word["xpos"] + "_" + word["deprel"] + "_" + sentence[word["head"]-1]["text"] +  " "
+            if "upos" in word.keys():
+                resulting_text += word["text"] + "_" + word["upos"]
+                if "ner" in word.keys():
+                    resulting_text += "_" + word["ner"]
+                if "xpos" in word.keys():
+                    resulting_text += "_" + word["xpos"]
+                if "deprel" in word.keys():
+                    resulting_text += "_" + word["deprel"] + "_" + sentence[word["head"] - 1]["text"] + " "
+            else:
+                resulting_text += word["text"]
+
         resulting_text += "\n"
     return resulting_text
 
