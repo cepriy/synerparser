@@ -1,36 +1,63 @@
-import stanza
+import os
 import sys
+import stanza
 
 def text_to_pos_ner(file_path, language_code):
     nlp = stanza.Pipeline(language_code)
     resulting_text = ""
-    text_fr_file = open(file_path, "r", encoding="utf-8")
-    text = text_fr_file.read().replace("\n", "")
+    with open(file_path, "r", encoding="utf-8") as text_file:
+        text = text_file.read().replace("\n", "")
     doc = nlp(text)
 
     for sentence in doc.to_dict():
         for word in sentence:
             if "upos" in word.keys():
                 resulting_text += word["text"] + "_" + word["upos"]
-                if "ner" in word.keys():
-                    resulting_text += "_" + word["ner"]
-                if "xpos" in word.keys():
-                    resulting_text += "_" + word["xpos"]
-                if "deprel" in word.keys():
-                    resulting_text += "_" + word["deprel"] + "_" + sentence[word["head"] - 1]["text"] + " "
+                # Uncomment these lines to include additional annotations
+                # if "ner" in word.keys():
+                #     resulting_text += "_" + word["ner"]
+                # if "xpos" in word.keys():
+                #     resulting_text += "_" + word["xpos"]
+                # if "deprel" in word.keys():
+                #     resulting_text += "_" + word["deprel"] + "_" + sentence[word["head"] - 1]["text"]
+                # if "lemma" in word.keys():
+                #     resulting_text += "(" + word["lemma"] + ")"
+                resulting_text += " "
             else:
                 resulting_text += word["text"]
 
         resulting_text += "\n"
     return resulting_text
 
-# Press the green button in the gutter to run the script.
+def process_file(file_path, language_code):
+    """Process a single file."""
+    print(f"Processing file: {file_path}")
+    output_file_path = file_path + "_parsed"
+    parsed_text = text_to_pos_ner(file_path, language_code)
+    with open(output_file_path, "w", encoding="utf-8") as output_file:
+        output_file.write(parsed_text)
+    print(f"Output written to: {output_file_path}")
+
+def process_folder(folder_path, language_code):
+    """Process all files in a folder."""
+    print(f"Processing folder: {folder_path}")
+    for file_name in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, file_name)
+        if os.path.isfile(file_path):
+            process_file(file_path, language_code)
+
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
-        print("Usage:\npython synerparser.py <filename> <language_code>")
+    if len(sys.argv) < 3:
+        print("Usage:\npython synerparser.py <file_or_folder> <language_code>")
+        sys.exit(1)
 
-    input_file = open(sys.argv[1]+"_parsed", "w", encoding="utf-8")
-    input_file.write(text_to_pos_ner(sys.argv[1], sys.argv[2]))
-    # doc.sentences[1].print_dependencies()
+    path = sys.argv[1]
+    language_code = sys.argv[2]
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    if os.path.isfile(path):
+        process_file(path, language_code)
+    elif os.path.isdir(path):
+        process_folder(path, language_code)
+    else:
+        print(f"Error: {path} is neither a file nor a folder.")
+        sys.exit(1)

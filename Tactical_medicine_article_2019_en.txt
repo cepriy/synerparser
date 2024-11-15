@@ -1,0 +1,28 @@
+The MARCH Algorithm in Tactical Combat Casualty Care
+Marco Torres on 07/12/2019
+The MARCH algorithm is synonymous with Tactical Combat Casualty Care (TCCC). It is a simple acronym for remembering the necessary steps in priority for saving lives in combat. M-massive hemorrhage, A-airway, R-respiratory, C-circulation, and H-hypothermia
+  
+The MARCH Algorithm in Tactical Combat Casualty Care
+by Andrew Fisher
+this article was first published in September 2017 in The Havok Journal
+Here is a link to the original article
+The MARCH algorithm is synonymous with Tactical Combat Casualty Care (TCCC). It is a simple acronym for remembering the necessary steps in priority for saving lives in combat. M-massive hemorrhage, A-airway, R-respiratory, C-circulation, and H-hypothermia.
+Recently EMS1.com published an article about the concept of the MARCH algorithm. While it is well known that civilian trauma and prehospital care advances greatly from military medicine during wars, at times, there is a failure of understanding about the meaning and reasoning behind the military’s rationale.
+This article has a mix of concepts, assessments and treatments. It seems the author was applying MARCH to current trauma knowledge used in EMS. There are many areas where the article is spot on. However, there are a couple areas where information is incorrect or false. In other areas, it is vague and may leave the reader wondering why it’s done this way.  Here is where the article could improve its message.
+ “MARCH is found in the tactical combat casualty care and  advanced trauma life support courses.”
+From what can be found, the MARCH acronym is most likely a UK invention. A thorough internet search failed to properly identify the origin. However, when a senior retired medical NCO, who is extremely familiar with TCCC was asked, he mentioned it was first heard around 2008 out of the UK military.
+Advanced Trauma Life Support (ATLS) protocols were developed to standardize trauma resuscitation and provide a reliable method for the management of trauma patients. However, ATLS has never used the MARCH algorithm, this has always been a TCCC/military term. MARCH is used to identify and treat the major causes of preventable death. About 90% of all casualties in combat, die before reaching the hospital. We have an opportunity to save a small percentage of those casualties by using a methodical algorithm that allows for identification and immediate treatment of the life-threatening wounds.
+ MASSIVE HEMORRHAGE
+“Massive hemorrhage can be addressed by the four Ds:
+•	Detect: find the source of the bleeding.
+•	Direct pressure: hold pressure on the source of the bleeding until the clot forms.
+•	Devices: if necessary, use equipment such as tourniquets, hemostatic gauze and pressure bandages to supplement direct pressure.
+•	Don’t dilute: use the concept of hypotensive resuscitation to avoid thinning the blood or pumping established clots.”
+ 
+Figure 1 Bellamy RF. The causes of death in conventional land warfare: implications for combat casualty care research. Mil Med. 1984;149(2):55–62. Based on the Wound Data Munitions Effectiveness Team (WDMET) during the Vietnam War between 1967 and 1969.
+Massive hemorrhage is strictly about massive hemorrhage, the treatments include tourniquet application, which should be the first treatment applied in true massive hemorrhage. It is not unreasonable to apply a pressure bandage, if you do it should be a hemostatic dressing for compressible hemorrhage not amenable to limb tourniquet use or as an adjunct to tourniquet removal. Junctional tourniquets and the use of XSTAT® is also approved to control massive hemorrhage.
+Hemorrhage is the leading cause of preventable death in combat. Bellamy (Figure 1) found that massive hemorrhage from extremities comprised over 9% of the all deaths in Vietnam.  However, of the leading three causes of preventable death, it was about 60%. Similarly, Eastridge et al. (Figure 2) found 91% of the potentially survivable patients died from hemorrhage.
+This is directly relatable to the civilian sector. Since 2001, there have been over 2,000,000 deaths from trauma. Over the last 10 years in the United States, there have been over 400,000 potentially survivable deaths, most of which were hemorrhage. Hesitation to immediately address massive hemorrhage is a significant reason to immediately apply a tourniquet.
+The easiest, quickest, and most efficient method of hemorrhage control is by tourniquet application. If after addressing life threats, it is determined that the hemorrhage did not need a tourniquet, it can be converted.  Two hours of tourniquet time is safe and they are used on a regular basis in orthopedic surgeries. Finally, there is no discussion of fluid resuscitation during the identification and treatment of massive hemorrhage.
+
+ https://tactical-medicine.com/blogs/news/the-march-algorithm-in-tactical-combat-casualty-care
