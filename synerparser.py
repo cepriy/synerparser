@@ -14,8 +14,8 @@ def text_to_pos_ner(file_path, language_code):
             if "upos" in word.keys():
                 resulting_text += word["text"] + "_" + word["upos"]
                 # Uncomment these lines to include additional annotations
-                # if "ner" in word.keys():
-                #     resulting_text += "_" + word["ner"]
+                if "ner" in word.keys():
+                    resulting_text += "_" + word["ner"]
                 # if "xpos" in word.keys():
                 #     resulting_text += "_" + word["xpos"]
                 # if "deprel" in word.keys():
@@ -32,7 +32,7 @@ def text_to_pos_ner(file_path, language_code):
 def process_file(file_path, language_code):
     """Process a single file."""
     print(f"Processing file: {file_path}")
-    output_file_path = file_path + "_parsed"
+    output_file_path = file_path + "_parsed.txt"
     parsed_text = text_to_pos_ner(file_path, language_code)
     with open(output_file_path, "w", encoding="utf-8") as output_file:
         output_file.write(parsed_text)
